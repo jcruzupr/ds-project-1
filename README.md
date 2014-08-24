@@ -1,5 +1,4 @@
-# Read Me
-##Getting and Cleaning Data Course Project
+##Project for Getting and Cleaning Data Course
 
 The purpose of this project is to collect, work with, and clean a data set.
 The goal is to prepare tidy data that can be used for later analysis.
@@ -27,4 +26,4 @@ The R script called run_analysis.R performs the following steps.
 
 Please see the detailed comments within the R script that describe each step in more detail.
 
-# =============================================================================
+=============================================================================
