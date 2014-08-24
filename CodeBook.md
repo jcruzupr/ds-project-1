@@ -17,23 +17,31 @@ The data sets are described in detail in the 'features_info.txt' and
 
 ### Labels (the list of features and activities)
  1- 'features.txt': List of features (described in features_info.txt).
+ 
  2- 'activity_labels.txt': Links the activity id labels with their activity name.
 
 ### Training Data 
  3- 'train/X_train.txt': Training set.
+ 
  4- 'train/y_train.txt': Training labels.
+ 
  5- 'train/subject_train.txt': Each row identifies the subject who performed the activity.
 
 ### Test Data
  6- 'test/X_test.txt': Test set.
+ 
  7- 'test/y_test.txt': Test labels.
+ 
  8- 'test/subject_test.txt': Each row identifies the subject who performed the activity.
  
 ## Two tidy data sets were generated:
  1- "merged_mean_std_data.txt"
  This file combines the rows of the training and test data sets:
+ 
      'train/X_train.txt' rows plus 'test/X_test.txt' rows
+     
      'train/y_train.txt' rows plus 'test/y_test.txt' rows
+     
      'train/subject_train.txt' rows plus 'test/subject_test.txt' rows
 	
 Punctuation was removed from the 'features.txt' labels and the
@@ -132,8 +140,11 @@ that include "Mean", "mean" OR "std" as part of the feature label, namely:
 Finally the merged data is written to a file in the working directory
 	
 2- "mean_measures_data.txt"
+
     This file starts with the merged data from the above steps.
+    
     The melt function is applied to create a "tall/skinny" data set.
+    
     Then the dcast function is applied that combines calculates the
     corresponding means for each subject + activity combination.
 	
